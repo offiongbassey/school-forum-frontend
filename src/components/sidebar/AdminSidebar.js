@@ -1,0 +1,67 @@
+import React, { useEffect, useState } from "react";
+import "./Sidebar.css";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { FaHome } from "react-icons/fa";
+import adminMenu from "../../data/adminSidebar";
+import SidebarItem from "./SidebarItem";
+import { useNavigate } from "react-router-dom";
+
+const AdminSidebar = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(true);
+  const [mobileIsOpen, setMobileIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    setMobileIsOpen(!mobileIsOpen);
+    // if(!mobileIsOpen){
+    //   setMobileIsOpen(true);
+    // }else{
+    //   setMobileIsOpen(false);
+    // }
+  }
+  const toggleMobile = () => {
+    setMobileIsOpen(!mobileIsOpen);
+  }
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate("/");
+  };
+
+
+  return (
+    <div className="layout">
+      <div className={`sidebar ${mobileIsOpen && 'sidebar-mobile'} ${isOpen && 'sidebar-large'}`} >
+        <div className="top_section">
+          <div className="logo" style={{ display: isOpen ? "block" : "none" }}>
+            <FaHome
+              size={35}
+              style={{ cursor: "pointer" }}
+              onClick={goHome}
+            />
+          </div>
+
+          <div
+            className="bars"
+            style={{ marginLeft: isOpen ? "100px" : "0px" }}
+          >
+            <HiMenuAlt3 onClick={toggle} />
+          </div>
+        </div>
+        {adminMenu.map((item, index) => {
+            return <SidebarItem key={index} item={item} isOpen={isOpen} mobileIsOpen={mobileIsOpen} toggleMobile={toggleMobile} />;
+          })}
+      </div>
+
+      <main
+        style={{
+          paddingLeft: isOpen ? "230px" : "60px",
+          transition: "all .5s",
+        }}
+      >
+        {children}
+      </main>
+    </div>
+  );
+};
+
+export default AdminSidebar;

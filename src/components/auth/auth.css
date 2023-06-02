@@ -1,0 +1,42 @@
+.auth{
+    background-color: #fff;
+    padding-top: 60px;
+  }
+  .form-section{
+    margin: 80px 0px 80px 20px;
+    padding: 20px;  
+    border: none!important;
+    background-color: #fff!important;
+
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  p b{
+    font-size: 18px;
+    font-weight: 600;
+    color: #0b5ed7;
+  }
+  .form-desc{
+    margin-bottom: 30px;
+  }
+  
+  .form-footer{
+    padding-top: 40px;
+    text-align: center;
+  
+  }
+  
+  .image-section{
+    padding-top: 60px;
+    background-color: #0B0B61;
+    text-align: center;
+  }
+  .image-section img{
+      width: 400px;
+      border-radius: 20px;
+  }
+  
+  
+  

@@ -1,0 +1,114 @@
+
+.navbar{
+  background-color: #ffff;
+  border-bottom: #efefef;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.btn-success{
+  background-color: #24b744!important;
+  border: #fff;
+}
+.btn-success:hover {
+  background-color: #fff!important;
+  color: #24b744!important;
+  border: 1px solid #24b744!important;
+}
+
+ .home  .nav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      color: #191970;
+      
+ }
+  
+  .home-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+     .home-links li a {
+      color: #fff;
+    }
+    .home-links > * {
+      margin-left: 1rem;
+      color: #fff;
+    
+  }
+  .welcome{
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+  .hero-text{
+    padding-top: 50px;
+  }
+  .hero-text h1{
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .hero-image img {
+    padding-top: 50px;
+    width: 400px;
+  }
+
+  .process {
+    background-color: #E4E6EF;
+
+  }
+  .process .row{
+    padding-top: 20px;
+  }
+  .process .card{
+    text-align: center;
+    padding: 50px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+  }
+  .process .orange{
+    background-color: #fef9e7;
+  }
+  .process .purple{
+background-color: #d7bde2
+  }
+  .process .lemon{
+    background-color:  #e4f2fe ;
+  }
+  .process .orange:hover {
+    background-color:  #f9e79f ;
+  }
+  .process .purple:hover{
+    background-color:  #f4ecf7  ;
+  }
+  .process .lemon:hover{
+    background-color:  #abebc6 ;
+  }
+
+
+ 
+  .account .box{
+   padding: 80px 30px;
+   
+  }
+  .account .verification{
+    background-color:   #fff ;
+  }
+  .account .verification .card{
+    border: none;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 80px 30px;
+  }
+  .account .verification .card:hover{
+    border: none;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 80px 30px;
+    background-color: #d6eaf8;
+  }
+  
+  .account .signup{
+    background-color:  #d6eaf8 ;
+  }

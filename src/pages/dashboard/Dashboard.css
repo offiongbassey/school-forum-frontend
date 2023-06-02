@@ -1,0 +1,48 @@
+
+.dashboard-page .dashboard-card{
+    background-color:  #daf3fd;
+    text-align: center;
+    margin: 10px;
+    padding: 50px 0px 50px 0px;
+}
+.dashboard-page .dashboard-card h4{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dashboard-page .dashboard-card p{
+    font-size: 12px;
+}
+.dashboard-page .dashboard-icon{
+    background-color:   #2b61a2;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.dashboard-page .dashboard-card-split{
+    text-align: center;
+    margin: 10px;
+}
+.dashboard-page .dashboard-card-split button{
+    width: 100%;
+}
+.dashboard-page .dashboard-icon-split{
+    background-color:   #daf3fd;
+    color: #2b61a2;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.dashboard-page .description{
+    text-align: left;
+    font-size: 14px;
+    color: #2b61a2;
+    padding: 20px;
+}

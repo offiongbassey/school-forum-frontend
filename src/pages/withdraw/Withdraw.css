@@ -1,0 +1,28 @@
+.withdraw-btn{
+    float: right;
+}
+.withdraw-btn button{
+    margin-left: 5px;
+}
+
+.withdraw h4{
+    color: black!important;
+}
+
+.withdraw-form-btn{
+    float: right;
+}
+
+.withdraw-form-btn button{
+margin-left: 5px;
+}
+
+.password-visibility{
+    float: right;
+    margin-left: -15px; cursor: pointer;
+    margin-top: -45px;
+
+}
+.password-input{
+    padding-right: 20px!important;
+  }

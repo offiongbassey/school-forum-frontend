@@ -1,0 +1,21 @@
+.page-not-found{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.page-not-found img{
+    margin: 50px 0px;
+    max-width: 300px;
+}
+
+.page-not-found h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.error-page{
+    background-color: rgb(240, 243, 248);
+    padding-bottom: 300px;
+    
+}
