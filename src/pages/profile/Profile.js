@@ -104,11 +104,7 @@ const Profile = () => {
                 
             }
             const data = await updateUser(formData);
-            if(data.status === 200){
-            toast.success("Profile Updated Successfully");
-            }else{
-                toast.error("An error occured, pls try again later.")
-            }
+            toast.success(data);
             // navigate("/dashboard");
             setIsLoading(false);
         } catch (error) {
