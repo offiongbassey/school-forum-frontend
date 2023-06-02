@@ -47,7 +47,7 @@ section {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .container-null{
   max-width: 1750px;
@@ -545,17 +545,16 @@ a:hover {
 }
 
 .dashboard-card{
-  padding: 20px 20px;
-  margin: 20px 0px;
-  
+  padding: 10px 10px;
+  margin-bottom: 10px;
   border: none;
   border-radius: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .dashboard-card-split{
-  padding: 20px 20px;
-  margin: 20px 0px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
   
   border: none;
   border-radius: 15px;

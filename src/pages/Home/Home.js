@@ -29,7 +29,7 @@ const Home = () => {
             <h4>UNICROSS Forum</h4>
         </div>
         <ul className='home-links'>
-            <ShowOnLogout>
+          {role === "" ? (
             <li>
             <Link to="/login">
             <button type="button" class="btn btn-primary">
@@ -37,8 +37,8 @@ const Home = () => {
             </button>
             </Link>
             </li>
-            </ShowOnLogout>
-            <ShowOnLogin>
+             ) : (
+
             <li>
                             {role === "Admin" && (
                             <Link to="/admin/dashboard">
@@ -63,7 +63,7 @@ const Home = () => {
                             )}
             
             </li>
-            </ShowOnLogin>
+            )}
         </ul>
       </nav>
       </div>

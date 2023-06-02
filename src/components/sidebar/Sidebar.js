@@ -3,13 +3,24 @@ import "./Sidebar.css";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaHome } from "react-icons/fa";
 import menu from "../../data/sidebar";
-import studentmenu from "../../data/studentsidebar";
 import SidebarItem from "./SidebarItem";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(true);
-  const toggle = () => setIsOpen(!isOpen);
+  const [mobileIsOpen, setMobileIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    setMobileIsOpen(!mobileIsOpen);
+    // if(!mobileIsOpen){
+    //   setMobileIsOpen(true);
+    // }else{
+    //   setMobileIsOpen(false);
+    // }
+  }
+  const toggleMobile = () => {
+    setMobileIsOpen(!mobileIsOpen);
+  }
   const navigate = useNavigate();
 
   const goHome = () => {
@@ -19,7 +30,7 @@ const Sidebar = ({ children }) => {
 
   return (
     <div className="layout">
-      <div className={`sidebar ${!isOpen && 'active-sidebar'}`} style={{ width: isOpen ? "230px" : "60px" }}>
+      <div className={`sidebar ${mobileIsOpen && 'sidebar-mobile'} ${isOpen && 'sidebar-large'}`} >
         <div className="top_section">
           <div className="logo" style={{ display: isOpen ? "block" : "none" }}>
             <FaHome
@@ -37,7 +48,7 @@ const Sidebar = ({ children }) => {
           </div>
         </div>
         {menu.map((item, index) => {
-            return <SidebarItem key={index} item={item} isOpen={isOpen} />;
+            return <SidebarItem key={index} item={item} isOpen={isOpen} mobileIsOpen={mobileIsOpen} toggleMobile={toggleMobile} />;
           })}
       </div>
 
