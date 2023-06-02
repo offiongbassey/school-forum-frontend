@@ -82,7 +82,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       
-      <Route path="/login" element={role === '' ? (<Login /> ) : (<Navigate to={userDashboard} />)} />
+      {/* <Route path="/login" element={role === '' ? (<Login /> ) : (<Navigate to={userDashboard} />)} /> */}
+      <Route path="/login" element={<Login />} />
       <Route path="/signup" element={role === '' ? (<Register />) : (<Navigate to={userDashboard} />)} />
       <Route path="/forgot" element={<Forgot />} />
       <Route path="/resetpassword/:resetToken" element={<Reset />} />
