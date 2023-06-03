@@ -41,6 +41,11 @@
     padding-top: 120px;
     padding-bottom: 80px;
   }
+  .lecturer-home{
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #e4f2fe;
+  }
   .hero-text{
     padding-top: 50px;
   }
@@ -50,7 +55,7 @@
   }
   .hero-image img {
     padding-top: 50px;
-    width: 300px;
+    width: 600px;
   }
 
   .process {
@@ -110,5 +115,5 @@ background-color: #d7bde2
   }
   
   .account .signup{
-    background-color:  #d6eaf8 ;
+    background-color: #e4f2fe;
   }

@@ -24,6 +24,23 @@ export const registerUser = async(userData) => {
         }
 
 }
+export const registerLecturer = async(userData) => {
+    try{
+        const response = await axios.post(
+            `${BACKEND_URL}/api/lecturer/signup`, userData, 
+        {withCredentials: true});
+        if(response.status === 201){
+            toast.success(response.data.message); 
+        }
+        return response.data;
+    }catch(error){
+        const message = (
+            error.response && error.response.data 
+            && error.response.data.message) 
+            || error.message || error.toString(); 
+            toast.error(message)
+        }
+}
 
 export const loginUser = async(userData) => {
     try{
