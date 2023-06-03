@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { getUser, logoutUser } from '../../services/authService';
+import { logoutUser } from '../../services/authService';
 import { useDispatch, useSelector} from "react-redux";
-import { selectUser, SET_LOGIN, SET_NAME, SET_USER, SET_ROLE, SET_PHOTO, SET_USERNAME, selectUserName } from '../../redux/features/auth/authSlice';
+import { selectUser, SET_LOGIN, SET_NAME, SET_ROLE, SET_PHOTO, SET_USERNAME, selectUserName } from '../../redux/features/auth/authSlice';
 import { selectName, selectRole, selectPhoto } from '../../redux/features/auth/authSlice';
-import {RxAvatar} from "react-icons/rx";
 import useRedirectLoggedOutUser from '../../customHook/useRedirectLoggedOutUser';
 
 
@@ -12,11 +11,9 @@ import useRedirectLoggedOutUser from '../../customHook/useRedirectLoggedOutUser'
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const firstName = useSelector(selectName);
   const role = useSelector(selectRole);
   const photo = useSelector(selectPhoto);
   const userName = useSelector(selectUserName);
-  const user = useSelector(selectUser);
   
   useRedirectLoggedOutUser("/login");
   const logout = async () => {

@@ -20,7 +20,6 @@ import AddProduct from "./pages/addProduct/AddProduct";
 import Product from "./pages/product/Product";
 import ProductDetail from "./components/product/productDetail/ProductDetail";
 import EditProduct from "./pages/editProduct/EditProduct";
-import EditProfile from "./pages/profile/EditProfile";
 import Profile from "./pages/profile/Profile";
 import Store from "./pages/store/Store";
 import StoreItem from "./pages/store/StoreItem";
