@@ -5,7 +5,7 @@ const Authimage = () => {
   return (
     <div className='col-md-6 image-section'>
               <div className='image'>
-                  <img src={authImage} />
+                  <img src={authImage} alt='image' />
               </div>
     </div>
   )
