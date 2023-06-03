@@ -52,6 +52,7 @@ import AdminCreateBank from "./pages/admin/bank/AdminCreateBank";
 import AuthorStore from "./pages/store/AuthorStore";
 import UploadProductSoftcopy from "./pages/product/UploadProductSoftcopy";
 import PageNotFound from "./pages/pageNotFound/PageNotFound";
+import RegisterLecturer from "./pages/auth/RegisterLecturer";
 
 
 
@@ -82,9 +83,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       
-      <Route path="/login" element={role === '' ? (<Login /> ) : (<Navigate to={userDashboard} />)} />
-      {/* <Route path="/login" element={<Login />} /> */}
-      <Route path="/signup" element={role === '' ? (<Register />) : (<Navigate to={userDashboard} />)} />
+      {/* <Route path="/login" element={role === '' || !role ? (<Login /> ) : (<Navigate to={userDashboard} />)} /> */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Register />} />
+      <Route path="/lecturer-signup" element={<RegisterLecturer />} />
       <Route path="/forgot" element={<Forgot />} />
       <Route path="/resetpassword/:resetToken" element={<Reset />} />
       <Route path="/reset-pin/:token" element={<ResetPin />} />

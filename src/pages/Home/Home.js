@@ -2,7 +2,9 @@ import React from 'react';
 import {RiProductHuntLine} from "react-icons/ri";
 import {Link} from "react-router-dom";
 import "./Home.css";
-import heroImage from "../../assets/hero1.jpg";
+import heroImage from "../../assets/hero2.jpg";
+import studentImg from "../../assets/student2.jpg";
+import lecturerImg from "../../assets/lecturer.jpg";
 import { ShowOnLogout, ShowOnLogin } from '../../components/protect/HiddenLink';
 import { useSelector } from 'react-redux';
 import { selectRole } from '../../redux/features/auth/authSlice';
@@ -101,7 +103,50 @@ const Home = () => {
             </div>
         </div>
       </section>
-      <div className='account container'>
+      <section className='welcome'>
+        <div className='container'>
+        <div className='row'>
+       
+        <div className='hero-image col-md-6'>
+                <img src={studentImg} />
+        </div>
+        <div className='hero-text col-md-6'>
+                <h1>SignUp as a <br />Student</h1>
+                <h4>Create an account and start enjoying<br/> the features of this app.</h4>
+                <br />
+                <br />
+                <Link to="signup">
+                <button className='btn btn-success'>
+                        SignUp
+                </button>
+                </Link>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section className='lecturer-home'>
+        <div className='container'>
+        <div className='row'>
+       
+       
+        <div className='hero-text col-md-6'>
+                <h1>SignUp as a <br />Lecturer</h1>
+                <h4>Create an account and start receiving payments<br/> from Students.</h4>
+                <br />
+                <br />
+                <Link to="lecturer-signup">
+                <button className='btn btn-success'>
+                        SignUp
+                </button>
+                </Link>
+        </div>
+        <div className='hero-image col-md-6'>
+                <img src={lecturerImg} />
+        </div>
+        </div>
+        </div>
+      </section>
+      {/* <div className='account container'>
                 <div className='row'>
                     <div className='col-md-6 verification box'>
                       <div className='card'>
@@ -130,7 +175,7 @@ const Home = () => {
                             </Link>
                     </div>
                 </div>
-      </div>
+      </div> */}
     </div>
   )
 }
