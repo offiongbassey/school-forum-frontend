@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { logoutUser } from '../../services/authService';
 import { useDispatch, useSelector} from "react-redux";
-import { selectUser, SET_LOGIN, SET_NAME, SET_ROLE, SET_PHOTO, SET_USERNAME, selectUserName } from '../../redux/features/auth/authSlice';
-import { selectName, selectRole, selectPhoto } from '../../redux/features/auth/authSlice';
+import {  SET_LOGIN, SET_NAME, SET_ROLE, SET_PHOTO, SET_USERNAME, selectUserName } from '../../redux/features/auth/authSlice';
+import { selectRole, selectPhoto } from '../../redux/features/auth/authSlice';
 import useRedirectLoggedOutUser from '../../customHook/useRedirectLoggedOutUser';
 
 

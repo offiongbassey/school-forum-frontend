@@ -619,3 +619,51 @@ table {
   width: 100%;
   overflow-x: auto;
 }
+
+.home-footer{
+  text-align: center;
+}
+
+@media(max-width:767px) {
+  h1{
+    font-size: 30px!important;
+  }
+  .welcome img{
+    width: 260px!important;
+  }
+  .welcome .hero-image{
+    text-align: center;
+  }
+  .lecturer-home .hero-image{
+    text-align: center;
+  }
+  .lecturer-home img{
+    width: 260px!important;
+  }
+  .navbar .logo h4{
+    font-size: 14px!important;
+  }
+
+
+  .home-links button{
+    float: left!important;
+    height: 35px!important;
+  }
+
+  .home-footer p{
+    font-size: 12px;
+  }
+  .image-section img{
+    width: 260px!important;
+    margin-bottom: 40px;
+  }
+  .pre-order-img img{
+    width: 230px!important;
+  }
+  .pre-order-img{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+}

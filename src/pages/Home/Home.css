@@ -117,3 +117,7 @@ background-color: #d7bde2
   .account .signup{
     background-color: #e4f2fe;
   }
+
+  .navbar .logo img{
+    width: 40px;
+  }

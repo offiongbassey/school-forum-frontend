@@ -57,18 +57,12 @@ const ProductForm = ({
                         </div>
                         <div className='col-md-12'>
                             <div className='form-group'>
-                            <label>Product Description:</label>
+                            <label >Product Description:</label>
                           <ReactQuill theme="snow" value={description}
                           onChange={setDescription} modules={ProductForm.modules} formats={ProductForm.formats} />
                             </div>
                         </div>
-                        <div className='col-md-6'>
-                        <div className='--my'>
-                              <button type='submit' className='btn btn-primary'>
-                                Save Product
-                              </button>
-                      </div>
-                        </div>
+                        
 
                     </div>
                 </div>
@@ -95,6 +89,13 @@ const ProductForm = ({
                     </div>
                 </div>
             </div>
+            <div className='col-md-12'>
+                              <div className='--my'>
+                                    <button type='submit' className='btn btn-primary'>
+                                      Save Product
+                                    </button>
+                              </div>
+                        </div>
             
 
         </div>
