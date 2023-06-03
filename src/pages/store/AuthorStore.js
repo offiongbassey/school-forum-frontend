@@ -5,7 +5,6 @@ import useRedirectLoggedOutUser from '../../customHook/useRedirectLoggedOutUser'
 import { getStoreAuthorProducts } from '../../services/storeServices';
 import { Link, useParams } from 'react-router-dom';
 import { SpinerImg } from '../../components/loader/Loader';
-import { toast } from 'react-toastify';
 
 const initialState = {
     productId: ""
