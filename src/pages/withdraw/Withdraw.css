@@ -26,3 +26,7 @@ margin-left: 5px;
 .password-input{
     padding-right: 20px!important;
   }
+
+  .withdraw .col-md-12{
+      margin-bottom: 10px;
+  }

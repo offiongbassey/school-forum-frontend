@@ -1,11 +1,9 @@
 import React from 'react';
-import {RiProductHuntLine} from "react-icons/ri";
 import {Link} from "react-router-dom";
 import "./Home.css";
 import heroImage from "../../assets/hero2.jpg";
 import studentImg from "../../assets/student2.jpg";
 import lecturerImg from "../../assets/lecturer.jpg";
-import { ShowOnLogout, ShowOnLogin } from '../../components/protect/HiddenLink';
 import { useSelector } from 'react-redux';
 import { selectRole } from '../../redux/features/auth/authSlice';
 
@@ -28,7 +26,7 @@ const Home = () => {
     <div className='navbar'>
       <nav className='container --flex-between nav'>
         <div className='logo'>
-            <h4>UNICROSS Forum</h4>
+            <h4><img src='https://res.cloudinary.com/dfhabqprq/image/upload/v1685624367/unicross_logo_ve3nzg.png' alt='logo' /> UNICROSS FORUM</h4>
         </div>
         <ul className='home-links'>
           {role === "" ? (
@@ -85,7 +83,7 @@ const Home = () => {
                 </Link>
         </div>
         <div className='hero-image col-md-6'>
-                <img src={heroImage} />
+                <img src={heroImage} alt="welcome" />
         </div>
         </div>
         </div>
@@ -108,7 +106,7 @@ const Home = () => {
         <div className='row'>
        
         <div className='hero-image col-md-6'>
-                <img src={studentImg} />
+                <img src={studentImg} alt="student" />
         </div>
         <div className='hero-text col-md-6'>
                 <h1>SignUp as a <br />Student</h1>
@@ -141,7 +139,7 @@ const Home = () => {
                 </Link>
         </div>
         <div className='hero-image col-md-6'>
-                <img src={lecturerImg} />
+                <img src={lecturerImg} alt="lecturer" />
         </div>
         </div>
         </div>
@@ -176,6 +174,11 @@ const Home = () => {
                     </div>
                 </div>
       </div> */}
+      <section className='home-footer'>
+        <div className='container'>
+          <p>Developed by <b>Offiong Bassey</b>, Powered by <b>Computer Science Dept.</b></p>
+        </div>
+      </section>
     </div>
   )
 }

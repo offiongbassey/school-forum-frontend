@@ -25,8 +25,7 @@ const ProductList = ({products, isLoading}) => {
 
      const shortenText = (text, n) => {
         if(text.length > n){
-            const shortendText = text.substring(0, n).
-            concat("...");
+            const shortendText = text.substring(0, n).concat("...");
             return shortendText;
         }
         return text;
@@ -133,7 +132,6 @@ const ProductList = ({products, isLoading}) => {
                                 {
                                   currentItmes.map((product, index) => {
                                         const {_id, name, quantity, price, } = product;
-                                        const REACT_APP_BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
                                         return (
                                             <tr key={_id}>
                                                 <td>{index + 1}</td>

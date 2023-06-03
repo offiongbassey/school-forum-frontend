@@ -2,20 +2,15 @@ import React, { useEffect, useState } from 'react';
 import "./ProductSummary.css";
 import {AiFillDollarCircle} from "react-icons/ai";
 import {BsCart4, BsCartX} from "react-icons/bs";
-import {BiCategory} from "react-icons/bi";
 import InfoBox from '../../infoBox/InfoBox';
 import { useDispatch, useSelector} from "react-redux";
 import { CAL_OUTOFSTOCK, CAL_STORE_VALUE, selectOutOfStock, selectTotalStoreValue } from '../../../redux/features/product/productSlice';
 import { getLecturerSumOrder } from '../../../services/authService';
 import { SpinerImg } from '../../loader/Loader';
-import { toast } from 'react-toastify';
-
-
 
 //icons
 const earningIcon = <AiFillDollarCircle size={20} color="#fff" />;
 const productIcon = <BsCart4 size={20} color="#fff" />;
-const categoryIcon = <BiCategory size={20} color="#fff" />;
 const outOfStockIcon = <BsCartX size={20} color="#fff" />;
 
 
