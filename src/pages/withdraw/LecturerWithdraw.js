@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Withdraw.css";
 import Modal from 'react-modal';
-import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
-import { AiFillEyeInvisible} from "react-icons/ai";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchLecturerWithdraws, resetWithdrawPIN, withDrawNow } from '../../services/authService';
